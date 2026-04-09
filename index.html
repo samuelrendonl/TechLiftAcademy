@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechLift Academy</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- 🔹 NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand fw-bold" href="#">TechLift Academy</a>
+
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#cursos">Cursos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary ms-2 px-3"
+                  href="#inscripcion"
+                >
+                  Inscribirme
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 🔹 CONTENIDO PRINCIPAL -->
+    <main>
+      <!-- HERO -->
+      <section
+        id="inicio"
+        class="d-flex align-items-center text-center text-lg-start"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Texto -->
+            <div class="col-lg-6">
+              <h1 class="display-4 fw-bold">Impulsa tu futuro en tecnología</h1>
+
+              <p class="lead mt-3">
+                Aprende desarrollo web y redes con cursos prácticos, modernos y
+                orientados al mundo laboral.
+              </p>
+
+              <div class="mt-4">
+                <a href="#cursos" class="btn btn-primary btn-lg me-2">
+                  Ver cursos
+                </a>
+
+                <a href="#inscripcion" class="btn btn-outline-light btn-lg">
+                  Inscribirme
+                </a>
+              </div>
+            </div>
+
+            <!-- Imagen -->
+            <div class="col-lg-6 text-center mt-4 mt-lg-0">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+                class="img-fluid rounded"
+                alt="Tecnología"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE NOSOTROS -->
+      <section id="nosotros" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Sobre TechLift Academy</h2>
+
+          <div class="row g-4">
+            <!-- QUIÉNES SOMOS -->
+            <div class="col-md-4">
+              <div class="p-4 bg-dark rounded h-100">
+                <h4>¿Quiénes somos?</h4>
+                <p>
+                  TechLift Academy es una startup tecnológica dedicada a la
+                  formación de talento en áreas de desarrollo web y redes,
+                  enfocada en habilidades prácticas y demandadas por la
+                  industria.
+                </p>
+              </div>
+            </div>
+
+            <!-- MISIÓN -->
+            <div class="col-md-4">
+              <div class="p-4 bg-dark rounded h-100">
+                <h4>Misión</h4>
+                <p>
+                  Formar profesionales en tecnología mediante educación
+                  accesible, práctica y actualizada, ayudando a nuestros
+                  estudiantes a mejorar sus oportunidades laborales en el mundo
+                  digital.
+                </p>
+              </div>
+            </div>
+
+            <!-- VISIÓN -->
+            <div class="col-md-4">
+              <div class="p-4 bg-dark rounded h-100">
+                <h4>Visión</h4>
+                <p>
+                  Ser una academia líder en formación tecnológica en
+                  Latinoamérica, reconocida por la calidad de sus programas y el
+                  impacto positivo en la vida profesional de sus estudiantes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURSOS -->
+      <section id="cursos" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Nuestros Cursos</h2>
+
+          <!-- REDES -->
+          <h4 class="mb-4">Redes</h4>
+          <div class="row g-4">
+            <!-- Curso 1 -->
+            <div class="col-md-4">
+              <div class="card bg-dark text-white h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Fundamentos de Redes</h5>
+                  <p>Nivel: Básico</p>
+                  <p>Duración: 4 semanas</p>
+                  <p>Modalidad: Virtual</p>
+                  <p class="fw-bold">$120 USD</p>
+                  <a href="#inscripcion" class="btn btn-primary">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="col-md-4">
+              <div class="card bg-dark text-white h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Seguridad Informática</h5>
+                  <p>Nivel: Intermedio</p>
+                  <p>Duración: 6 semanas</p>
+                  <p>Modalidad: Virtual</p>
+                  <p class="fw-bold">$150 USD</p>
+                  <a href="#inscripcion" class="btn btn-primary">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="col-md-4">
+              <div class="card bg-dark text-white h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Administración de Servidores</h5>
+                  <p>Nivel: Avanzado</p>
+                  <p>Duración: 8 semanas</p>
+                  <p>Modalidad: Presencial</p>
+                  <p class="fw-bold">$200 USD</p>
+                  <a href="#inscripcion" class="btn btn-primary">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DESARROLLO WEB -->
+          <h4 class="mt-5 mb-4">Desarrollo Web</h4>
+          <div class="row g-4">
+            <!-- Curso 4 -->
+            <div class="col-md-4">
+              <div class="card bg-dark text-white h-100">
+                <div class="card-body">
+                  <h5 class="card-title">HTML, CSS y JavaScript</h5>
+                  <p>Nivel: Básico</p>
+                  <p>Duración: 5 semanas</p>
+                  <p>Modalidad: Virtual</p>
+                  <p class="fw-bold">$130 USD</p>
+                  <a href="#inscripcion" class="btn btn-primary">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Curso 5 -->
+            <div class="col-md-4">
+              <div class="card bg-dark text-white h-100">
+                <div class="card-body">
+                  <h5 class="card-title">React Básico</h5>
+                  <p>Nivel: Intermedio</p>
+                  <p>Duración: 6 semanas</p>
+                  <p>Modalidad: Virtual</p>
+                  <p class="fw-bold">$160 USD</p>
+                  <a href="#inscripcion" class="btn btn-primary">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Curso 6 -->
+            <div class="col-md-4">
+              <div class="card bg-dark text-white h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Backend con Python</h5>
+                  <p>Nivel: Avanzado</p>
+                  <p>Duración: 8 semanas</p>
+                  <p>Modalidad: Mixta</p>
+                  <p class="fw-bold">$220 USD</p>
+                  <a href="#inscripcion" class="btn btn-primary">Inscribirme</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios" class="py-5">
+        <div class="container text-center">
+          <h2 class="mb-5">¿Por qué elegir TechLift Academy?</h2>
+
+          <div class="row g-4">
+            <!-- Beneficio 1 -->
+            <div class="col-md-3">
+              <div class="p-4 bg-dark rounded">
+                <h4>🎓</h4>
+                <h5>Certificación</h5>
+                <p>
+                  Obtén certificados que respaldan tus habilidades tecnológicas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Beneficio 2 -->
+            <div class="col-md-3">
+              <div class="p-4 bg-dark rounded">
+                <h4>💻</h4>
+                <h5>Clases prácticas</h5>
+                <p>
+                  Aprende haciendo con proyectos reales desde el primer día.
+                </p>
+              </div>
+            </div>
+
+            <!-- Beneficio 3 -->
+            <div class="col-md-3 d-flex">
+              <div class="p-4 bg-dark rounded w-100">
+                <h4>👨‍🏫</h4>
+                <h5>Profesores expertos</h5>
+                <p>Instructores con experiencia real en la industria.</p>
+              </div>
+            </div>
+
+            <!-- Beneficio 4 -->
+            <div class="col-md-3 d-flex">
+              <div class="p-4 bg-dark rounded w-100">
+                <h4>🕒</h4>
+                <h5>Flexibilidad</h5>
+                <p>Estudia a tu ritmo con horarios adaptados a ti.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MULTIMEDIA -->
+      <section id="multimedia" class="py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Texto -->
+            <div class="col-lg-6">
+              <h2>Aprende con tecnología real</h2>
+              <p class="mt-3">
+                Nuestros cursos están diseñados para que aprendas con
+                herramientas actuales y metodologías prácticas enfocadas en el
+                mundo laboral.
+              </p>
+              <p>
+                Desde desarrollo web hasta redes, tendrás acceso a contenido
+                actualizado y experiencias reales de aprendizaje.
+              </p>
+            </div>
+
+            <!-- Video -->
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/zOjov-2OZ0E"
+                  title="Curso tecnología"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULARIO -->
+      <section id="inscripcion" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Inscríbete ahora</h2>
+
+          <form action="https://formspree.io/f/mwvwjvnv" method="POST">
+            <div class="row g-4">
+              <!-- DATOS PERSONALES -->
+              <div class="col-md-6">
+                <label class="form-label">Nombre completo</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Correo electrónico</label>
+                <input type="email" name="email" class="form-control" />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Teléfono</label>
+                <input type="text" name="telefono" class="form-control" />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Ciudad</label>
+                <input type="text" name="ciudad" class="form-control" />
+              </div>
+
+              <!-- PERFIL -->
+              <div class="col-md-4">
+                <label class="form-label">Nivel</label>
+                <select name="nivel" class="form-select">
+                  <option>Principiante</option>
+                  <option>Intermedio</option>
+                  <option>Avanzado</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label">Área de interés</label>
+                <select name="area" class="form-select">
+                  <option>Redes</option>
+                  <option>Desarrollo Web</option>
+                  <option>Ambas</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label">Modalidad</label>
+                <select name="modalidad" class="form-select">
+                  <option>Virtual</option>
+                  <option>Presencial</option>
+                  <option>Mixta</option>
+                </select>
+              </div>
+
+              <!-- INTERESES -->
+              <div class="col-md-6">
+                <label class="form-label">Curso de interés</label>
+                <select name="curso" class="form-select">
+                  <option>Fundamentos de Redes</option>
+                  <option>Seguridad Informática</option>
+                  <option>HTML, CSS y JS</option>
+                  <option>React Básico</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Horario disponible</label>
+                <select name="horario" class="form-select">
+                  <option>Mañana</option>
+                  <option>Tarde</option>
+                  <option>Noche</option>
+                  <option>Fines de semana</option>
+                </select>
+              </div>
+
+              <!-- MARKETING -->
+              <div class="col-12">
+                <label class="form-label">¿Cómo nos conociste?</label>
+                <select name="conocimiento" class="form-select">
+                  <option>Redes sociales</option>
+                  <option>Google</option>
+                  <option>Recomendación</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              <!-- CHECK -->
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" required />
+                  <label class="form-check-label">
+                    Acepto el tratamiento de datos
+                  </label>
+                </div>
+              </div>
+
+              <!-- BOTÓN -->
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-lg mt-3">
+                  Enviar inscripción
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          id="mensajeExito"
+          class="alert alert-success mt-4 d-none text-center"
+        >
+          ✅ Tu inscripción fue enviada correctamente
+        </div>
+      </section>
+    </main>
+
+    <!-- 🔹 FOOTER -->
+    <footer class="py-4 text-center">
+      <div class="container">
+        <h5>TechLift Academy</h5>
+
+        <p class="mb-1">Formando talento tecnológico para el futuro</p>
+
+        <p class="mb-1">📧 contacto@techlift.com | 📱 +57 300 000 0000</p>
+
+        <p class="mb-0">
+          © 2026 TechLift Academy - Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
