@@ -99,7 +99,7 @@
             <!-- Imagen -->
             <div class="col-lg-6 text-center mt-4 mt-lg-0">
               <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+                src="assets/img/Hero_foto.jpeg"
                 class="img-fluid rounded"
                 alt="Tecnología"
               />
@@ -340,7 +340,14 @@
         <div class="container">
           <h2 class="text-center mb-5">Inscríbete ahora</h2>
 
-          <form action="https://formspree.io/f/mwvwjvnv" method="POST">
+          <form
+            action="https://formspree.io/f/mwvwjvnv"
+            method="POST"
+            onsubmit="
+              enviarFormulario(event);
+              return false;
+            "
+          >
             <div class="row g-4">
               <!-- DATOS PERSONALES -->
               <div class="col-md-6">

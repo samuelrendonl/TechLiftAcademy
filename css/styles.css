@@ -2,6 +2,7 @@ body {
   background-color: #0d0d0d;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+  padding-top: 80px;
 }
 
 /* Navbar */
@@ -17,6 +18,7 @@ body {
 
 /* Links */
 .nav-link {
+  font-weight: 500;
   font-size: 1.05rem;
   margin-left: 10px;
   color: #ffffff;
@@ -181,4 +183,162 @@ h4 {
 
 .btn {
   border-radius: 8px;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 992px) {
+  /* HERO */
+  #inicio {
+    text-align: center;
+  }
+
+  #inicio h1 {
+    font-size: 3.5rem;
+  }
+
+  #inicio p {
+    font-size: 1.5rem;
+  }
+
+  #inicio img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* NAVBAR */
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .nav-link {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  /* HERO */
+  #inicio {
+    padding: 30px 15px;
+  }
+
+  #inicio h1 {
+    font-size: 2.5rem;
+  }
+
+  #inicio p {
+    font-size: 1.2rem;
+  }
+
+  #inicio .btn {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #inicio img {
+    max-height: 280px;
+  }
+
+  /* BENEFICIOS */
+  #beneficios .col-md-3 {
+    margin-bottom: 15px;
+  }
+
+  /* FORMULARIO */
+  form .col-md-6,
+  form .col-md-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /* HERO MÁS COMPACTO */
+  #inicio h1 {
+    font-size: 2rem;
+  }
+
+  #inicio p {
+    font-size: 1rem;
+  }
+
+  #inicio img {
+    max-height: 220px;
+  }
+
+  /* TÍTULOS GENERALES */
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ========================= */
+/* ✨ HOVERS GENERALES PRO */
+/* ========================= */
+
+/* NAVBAR LINKS */
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+/* BOTONES GENERALES */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* BOTÓN PRIMARY GLOBAL */
+.btn-primary:hover {
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.35);
+}
+
+/* CARDS (CURSOS) */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* BENEFICIOS (refuerzo visual) */
+#beneficios .p-4 {
+  transition: all 0.3s ease;
+}
+
+#beneficios .p-4:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* INPUTS DEL FORM */
+.form-control,
+.form-select {
+  transition: all 0.25s ease;
+}
+
+.form-control:hover,
+.form-select:hover {
+  background-color: #222;
+}
+
+/* CHECKBOX */
+.form-check-input {
+  transition: 0.2s;
+}
+
+.form-check-input:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* FOOTER (detalle fino) */
+footer p:hover {
+  color: #ffffff;
+  transition: 0.3s;
 }

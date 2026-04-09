@@ -1,7 +1,24 @@
-function mostrarMensaje(event) {
-  const mensaje = document.getElementById("mensajeExito");
-  mensaje.classList.remove("d-none");
+function enviarFormulario(event) {
+  event.preventDefault();
 
-  // Opcional: limpiar formulario
-  event.target.reset();
+  const form = event.target;
+
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        // 🔥 REDIRECCIÓN SEGURA
+        window.location.replace("gracias.html");
+      } else {
+        alert("Error al enviar");
+      }
+    })
+    .catch(() => {
+      alert("Error de conexión");
+    });
 }
